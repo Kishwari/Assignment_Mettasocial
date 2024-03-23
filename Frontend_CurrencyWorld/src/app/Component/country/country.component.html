@@ -1,0 +1,37 @@
+
+
+<div class="country-dashboard">
+   <div class="search">
+      <nav class="navbar navbar-light ">
+          <div class="container-fluid">
+            <form class="d-flex border border-success" style=" margin-top:200px;margin-left:490px;width:350px;">   
+              <input class="form-control me-7" type="text" [(ngModel)]="searchValue"  name="data"  ngModel  placeholder="Search By Currency or Code" aria-label="Search">
+            </form>
+          </div>
+        </nav>
+      </div>
+    
+  
+    <!-- available counties-->
+    
+    <div class="country-container-main">
+       <div class="country-container">
+         <div class="country-box"  *ngFor="let country of  countryList | searchBy : searchValue ">
+              
+               <img [src]="getCountryImage(country)" [alt]="'Country ' + country.countryName + ' ' + country.countryCapital">
+               <p>Country : {{country.countryName}}</p>
+               <p>Capital : {{country.countryCapital}}</p>
+               
+              <!--   <button routerLink="/makepayment">Book</button>    (isRadioButtonClicked ? carFilterList : countryList)"-->
+     
+           </div>
+          
+       </div>
+    </div>
+    
+    
+    
+    <router-outlet></router-outlet>
+    
+    
+    </div>

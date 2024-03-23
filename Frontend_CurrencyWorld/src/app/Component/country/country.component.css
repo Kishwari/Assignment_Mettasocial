@@ -1,0 +1,63 @@
+.country-dashboard {
+   overflow: auto;
+}
+
+/* available countries*/
+
+.country-container-main {
+   width: calc(100% - 80px);
+   max-width: 1200px;
+   /* Optional: Set a maximum width */
+   margin: auto;
+   /* Center horizontally */
+   padding: 50px;
+   box-sizing: border-box;
+   /* Include padding in width calculation */
+
+}
+
+.country-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   justify-content: center;
+   padding: 70px;
+   background-color: whitesmoke;
+
+
+}
+
+
+.country-box {
+   background-color: #ffffff;
+   text-align: center;
+   padding: 20px;
+   box-sizing: border-box;
+   border-color: black;
+   border-top: 1px solid rgb(8, 1, 1);
+   border-bottom: 1px solid rgb(8, 1, 1);
+   border-left: 1px solid rgb(8, 1, 1);
+   border-right: 1px solid rgb(8, 1, 1);
+}
+
+
+.country-box img {
+   width: 100%;
+   max-width: 200px;
+   height: auto;
+   display: block;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: 30px;
+   border-bottom: 1px solid rgb(8, 1, 1);
+}
+
+
+.country-box h2 {
+   margin-bottom: 10px;
+}
+
+
+.country-box p {
+   margin-bottom: 10px;
+}
